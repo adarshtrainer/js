@@ -94,11 +94,85 @@
       //   5. Anonymous function
       //   5.1 Function expression 5.2 CB functions 5.3 Array methods
       //   5.2 Cb
-      setTimeout(function () {
-        console.log("CB function");
-      }, 1000);
+      // setTimeout(function () {
+      //   console.log("CB function");
+      // }, 1000);
 
-      //   6. IIFE
+      //   6. IIFE: Immediatly invoked function expression
+      // (function(parameters){
+      //   Code
+      // })()
+
+      // (function (userName) {
+      //   let name = "Madhu";
+      //   console.log("My Name is", name);
+      // })("Madhu");
+
+      // 7. Arrow functions (ES6)
+
+      // const name = () => {
+      //   code;
+      // };
+
+      // const greet = (name) => {
+      //   console.log("Hello", name);
+      // };
+      // greet("Madhu");
+
+      // const add = (a, b) => a + b;
+      // console.log(add(2, 5));
+
+      // 8. Recursive function
+      // function name() {
+      //   name();
+      // }
+
+      // function countdown(num) {
+      //   if (num === 1) {
+      //     return 1;
+      //   }
+      //   return num * countdown(num - 1);
+      // }
+
+      // console.log(countdown(5));
+
+      // Lexical scoping
+
+      // let name = "Madhu";
+
+      // function user() {
+      //   let age = 18;
+      //   console.log(name, age);
+      // }
+      // if (true) {
+      //   let add = "India";
+      //   console.log(name, add);
+      // }
+
+      // user();
+
+      // Closure
+
+      // function outer() {
+      //   let message = "Hii";
+
+      //   function inner() {
+      //     let name = "Madhu";
+      //     console.log(message, name);
+      //   }
+
+      //   console.log(name);
+      //   return inner;
+      // }
+
+      // const res = outer();
+      // res();
+
+      // function madhu(a, b, c, d) {}
+
+      // console.log(madhu.prototype);
+
+      // Call, Apply and Bind
     </script>
   </body>
 </html>
